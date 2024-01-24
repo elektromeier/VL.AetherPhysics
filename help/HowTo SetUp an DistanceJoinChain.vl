@@ -53,7 +53,7 @@
             <Pin Id="KStDTJs5WP6OQkvClJQZqo" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="373,174,45,19" Id="UCDH5R0mZ6rMIOkHWli89M">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Aether" />
               <CategoryReference Kind="Category" Name="World" />
@@ -63,8 +63,6 @@
             <Pin Id="RblPSZYrW9kNilLktffXsm" Name="Gravity" Kind="InputPin" />
             <Pin Id="Qh3jA2iQsyePjbIzhgxFnU" Name="Clear" Kind="InputPin" />
             <Pin Id="CCsdgjJegQkMTJqRccmtU7" Name="World" Kind="OutputPin" />
-            <Pin Id="BUzL8JpKs95NIIP1GikDeC" Name="BodyCount" Kind="OutputPin" />
-            <Pin Id="S5nUiUctW8VLDNDNrYjjAv" Name="Bodies" Kind="OutputPin" />
           </Node>
           <Pad Id="JvZ9Ux7YenMQTUMnWynhVk" Comment="Clear" Bounds="375,68,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -115,7 +113,6 @@
             <Pin Id="B2PZ9QHZZrKQXlSK52yofh" Name="Enabled" Kind="InputPin" />
             <Pin Id="T3jCjRqCkvrMffGC653VdC" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Hl4LgNhW6Q5PvGgvi3iIdf" Comment="BodyCount" Bounds="398,229,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="567,315,423,164" Id="TtS8xXtwbAwPCoQqMKEdJR">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -144,7 +141,7 @@
                 <Pin Id="OUY9LHDE2EPLKemdm4Wf6R" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="579,434,399,19" Id="I4zHqEOiDYgLEpVdpCsHt2">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl" OverloadStrategy="AllPinsThatAreNotCommon">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="World" NeedsToBeDirectParent="true" />
                   <Choice Kind="ProcessAppFlag" Name="AddBody" />
@@ -173,6 +170,7 @@
                 <Pin Id="KTFnG59dQqVPWkKUHBvObi" Name="Fixtures" Kind="InputPin" />
                 <Pin Id="J8VOz3jcYTiLlbP2GyZcXf" Name="Remove" Kind="InputPin" />
                 <Pin Id="DCss0ogbSkhOeDivHhDAK2" Name="World" Kind="OutputPin" />
+                <Pin Id="FB07jr86mceOaTAsDzRdxS" Name="Body" Kind="OutputPin" />
                 <Pin Id="NksACyliEwQOmDYeNupDzZ" Name="Added Bodies" Kind="OutputPin" />
               </Node>
               <Node Bounds="603,349,25,19" Id="QH4eWCFx2vGNqny0fgAJDm">
@@ -185,7 +183,7 @@
                 <Pin Id="GgurgGexprgPMpDH1PCRG1" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="912,382,45,19" Id="LHCqMcCcD3oLEG9PtuLRG3">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="Aether2.0.vl">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Fixture" />
                   <Choice Kind="OperationCallFlag" Name="Circle" />
@@ -193,8 +191,10 @@
                 <Pin Id="AcIMpkNUwniMlDc0dhXTK2" Name="Radius" Kind="InputPin" />
                 <Pin Id="Pmg428iHxjlOt9mmHzyrK4" Name="Density" Kind="InputPin" />
                 <Pin Id="QgzGJB3v8ZzNn1wWL5UybE" Name="Position" Kind="InputPin" />
+                <Pin Id="PN8tKpkOmEDOlJbN09yTDR" Name="Friction" Kind="InputPin" />
                 <Pin Id="PNksTGfxuyGQNAv42KIY5v" Name="Fixture" Kind="OutputPin" />
                 <Pin Id="FOW39Znci4CMKkRRsF5LVR" Name="Fixtures" Kind="OutputPin" />
+                <Pin Id="To6FgPSDLSWNdKoPjctV3P" Name="Vertices" Kind="OutputPin" />
               </Node>
               <Node Bounds="913,404,39,19" Id="TKLU7dMF7nrPVPnERPLJTH">
                 <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -287,7 +287,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="319,582,378,19" Id="IEifkxGwfz1LKVEXGfqdJt">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AddDistanceJointChain" />
             </p:NodeReference>
@@ -318,7 +318,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="321,669,65,19" Id="RjJRX4uNyHOOELEIzIOWbB">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Draw.Joints" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Draw.Joints" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="DrawJoints" />
             </p:NodeReference>
@@ -340,7 +340,7 @@
               <Patch Id="UvSIgUxa5wEL1qqV9MQLdB" Name="Update" ManuallySortedPins="true" />
               <Patch Id="TzhMBRBa3dLOhHCgDhLpDT" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="1073,608,125,19" Id="HZsC1JzonjkNp6aZG7nTga">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Body" LastDependency="Aether2.0.vl">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Body" LastDependency="VL.AetherPhysics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="MoveByMouseKinematic" />
                 </p:NodeReference>
@@ -350,7 +350,7 @@
                 <Pin Id="H6O1WCMJf8TP1G0eX2ySKN" Name="IsClicked" Kind="OutputPin" />
               </Node>
               <Node Bounds="1049,733,62,19" Id="NbCu742eQsyPLs6yQvwgRP">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Draw.Bodies" LastDependency="Aether2.0.vl">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Draw.Bodies" LastDependency="VL.AetherPhysics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="DrawBody" />
                 </p:NodeReference>
@@ -442,7 +442,6 @@
         <Link Id="QN29l5bbheEQWcg9F8ZxZd" Ids="EsADkVIAM8wN4Xdh7NrsyC,NAWl6JE6LTrPDyrwyQH8xr" />
         <Link Id="QuAoGg8NCF3NrQV9kHTMMn" Ids="Sste8jIfHQfO17n2VG5eb3,KEDSqYgVw8iOsDOFCbsHi8" />
         <Link Id="SAqYjcJoHO0PQ8tSi1sMPE" Ids="T3jCjRqCkvrMffGC653VdC,OCUeG1lgVPfMCZoZFqBzgg" />
-        <Link Id="SRrRMkkmaTxQEjciODDFGc" Ids="BUzL8JpKs95NIIP1GikDeC,Hl4LgNhW6Q5PvGgvi3iIdf" />
         <Link Id="JHpGvbcglrqLdMuA3MAz5e" Ids="OUY9LHDE2EPLKemdm4Wf6R,JKUtiO4kMalLyCqzDAbiJM" />
         <Link Id="VwViJEeYvK5PbRq582j4Sn" Ids="CCsdgjJegQkMTJqRccmtU7,IkzpHYcn7bROG9jfSWRh47" />
         <Link Id="UZxp5JJRntgMNNqM5LnTCU" Ids="NksACyliEwQOmDYeNupDzZ,IkU9SABVfJ4PpSlcZnxzzk" />
@@ -497,5 +496,5 @@
   </Patch>
   <NugetDependency Id="C7gS6LcD54JLqCdGc2bhqL" Location="VL.Skia" Version="2023.5.3-0403-g984a15c5cf" />
   <NugetDependency Id="PkIAUTxQBpfM2oL9y8JJq4" Location="Aether.Physics2D" Version="2.0.0" />
-  <NugetDependency Id="MTsRL0Q5DylPdsN4hHzoFi" Location="Aether2.0" Version="0.0.0" />
+  <NugetDependency Id="HPoH7rPEUd6MnWPlyynAbJ" Location="VL.AetherPhysics" Version="0.0.0" />
 </Document>

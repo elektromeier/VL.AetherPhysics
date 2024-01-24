@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="JbIMeRzMQUFOBwqORSnduB" LanguageVersion="2023.5.3-0403-g984a15c5cf" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Gicp4O5dhR5NgJmQfyVhKb" LanguageVersion="2023.5.3-0403-g984a15c5cf" Version="0.128">
   <NugetDependency Id="PdVsqF6a7fjOFiXF5kOESs" Location="VL.CoreLib" Version="2023.5.3-0403-g984a15c5cf" />
   <Patch Id="PpkAwaVjYkyOYTsZ6OuFhM">
     <Canvas Id="G6Y5gzq6V5wOEg61UBrrvc" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -16,7 +16,7 @@
       <Patch Id="FXtnPpEe7o5MPV8WKZLCRi">
         <Canvas Id="BNjnIirhgYUOzfzWqOppFL" CanvasType="Group">
           <Node Bounds="61,145,45,19" Id="SkyqpPKrOBoPvFbLqf34dn">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="World" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="World" />
@@ -71,7 +71,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="458,1291,205,19" Id="KXvuaCvWcusP2V5iquEnGr">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl" OverloadStrategy="AllPinsThatAreNotCommon">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Aether" />
               <CategoryReference Kind="Category" Name="Physics2D" />
@@ -103,11 +103,11 @@
             <Pin Id="ReC32jup66ZMVvGgZfILuj" Name="Fixtures" Kind="InputPin" />
             <Pin Id="VnDY3prUdVLP0yHqokRhbS" Name="Remove" Kind="InputPin" />
             <Pin Id="PC1SpaEmh0UL4k8je0sSPB" Name="World" Kind="OutputPin" />
+            <Pin Id="PMq63BqOlL2NxqRdCi7Eor" Name="Body" Kind="OutputPin" />
             <Pin Id="F3l7vnhilBPNK3FgdCn9NG" Name="Added Bodies" Kind="OutputPin" />
-            <Pin Id="P8zgWSPJikgO3kODJjHy3A" Name="Body" Kind="OutputPin" />
           </Node>
           <Node Bounds="605,1214,117,19" Id="Jf4ZZOXlqNxPiMylQH6MyN">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Aether" />
               <CategoryReference Kind="Category" Name="Fixture" />
@@ -145,7 +145,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1044,839,205,19" Id="EW0OjyCs1dxL44cLksDwlg">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AddPolygon" />
             </p:NodeReference>
@@ -178,15 +178,15 @@
             <Pin Id="Nv3zySHEjTPLR4yRcAgUjt" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="59,343,253,19" Id="AAVwke8QzQWOy61oSjQfAV">
-            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+            <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="World" />
               <Choice Kind="ProcessAppFlag" Name="DrawWorld" />
             </p:NodeReference>
             <Pin Id="AObdKGx1KjAQZRXSM6Q4uc" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="JoofZ8TPThDPWy8f3aQABw" Name="World" Kind="InputPin" />
-            <Pin Id="JyUhtEpgLV5PM9nvlxMTWQ" Name="Paint Bodies" Kind="InputPin" />
-            <Pin Id="J6OO2KCsIt6LACrAVT31BQ" Name="Paint Joints" Kind="InputPin" />
+            <Pin Id="Cy0tUTVk9tjL0refDDbDgC" Name="Paint Bodies" Kind="InputPin" />
+            <Pin Id="PQBg3D89fKiOhvZluy6kof" Name="Paint Joints" Kind="InputPin" />
             <Pin Id="IyHJU1budoELhY2i4AsH3Z" Name="Layer" Kind="OutputPin" />
           </Node>
           <Node Bounds="309,294,105,19" Id="NeUof0K8d5IPldt3FZVJYx">
@@ -212,7 +212,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="780,914,370,124" Id="O7FuEZ4i7Y2PDpoVQUoTAw">
+          <Node Bounds="780,914,369,126" Id="O7FuEZ4i7Y2PDpoVQUoTAw">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -220,12 +220,13 @@
             </p:NodeReference>
             <Pin Id="QVke62WjeXvO6z2zk11zs2" Name="Break" Kind="OutputPin" />
             <ControlPoint Id="T2TiCJGfq1DO1dW7xUHwMp" Bounds="849,920" Alignment="Top" />
+            <ControlPoint Id="QXBiWou07CYQAmyOPHL7IW" Bounds="962,1034" Alignment="Bottom" />
             <Patch Id="KYolzr7WNNRMkpdy6R4GIh" ManuallySortedPins="true">
               <Patch Id="AIlEZwQD0urOc11C6q1Tkg" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Bln0Yzt0p1ALSsG8wGxprW" Name="Update" ManuallySortedPins="true" />
               <Patch Id="L2KrHPt9Yn0O3TgEZOERKG" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="792,996,345,19" Id="C21lXc8hVB2OgkN4QWcTib">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="AddCircle" />
                 </p:NodeReference>
@@ -242,8 +243,8 @@
                 <Pin Id="H12Fql6TvZcMl86m8FEIXX" Name="CirclePosition" Kind="InputPin" />
                 <Pin Id="CQIy3B1fY9kPbjZp0Kyqv0" Name="Remove" Kind="InputPin" />
                 <Pin Id="ShJHeoiX4UiNf3U1LajGzg" Name="World" Kind="OutputPin" />
-                <Pin Id="MfLSqasCASAMWW8eyO4rdn" Name="Added Bodies" Kind="OutputPin" />
                 <Pin Id="AAep1zxzCODOiwDp6xzH4N" Name="Body" Kind="OutputPin" />
+                <Pin Id="MfLSqasCASAMWW8eyO4rdn" Name="Added Bodies" Kind="OutputPin" />
               </Node>
               <Pad Id="DioDci7enXgNnhlowyM0n3" Comment="Body Type" Bounds="898,972,68,15" ShowValueBox="true" isIOBox="true" Value="Dynamic">
                 <p:TypeAnnotation LastCategoryFullName="nkast.Aether.Physics2D.Dynamics" LastDependency="Aether.Physics2D.dll">
@@ -256,7 +257,6 @@
                 </p:TypeAnnotation>
               </Pad>
             </Patch>
-            <ControlPoint Id="QXBiWou07CYQAmyOPHL7IW" Bounds="1133,1032" Alignment="Bottom" />
           </Node>
           <Node Bounds="992,1115,65,19" Id="RSIUHI17JYZOf1HrEtxMXp">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -277,6 +277,7 @@
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="GZ0Um9BtS3lMbvdvAEuZPc" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="FklCgH58vkIOFrQwqIFZGg" Bounds="994,1156" Alignment="Top" />
             <Patch Id="Qswpf8sTQVELwmTxigFAXQ" ManuallySortedPins="true">
               <Patch Id="VD4q1G9teDqOdf1vysc48K" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Nq9ILIEsrELPv3SU7imwCd" Name="Update" ManuallySortedPins="true" />
@@ -288,6 +289,7 @@
                   <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 </p:NodeReference>
                 <Pin Id="RqPk7Q0Sm66QC7XQfURJVQ" Name="Break" Kind="OutputPin" />
+                <ControlPoint Id="NA4ZQ1OjSaJNcvJhUJenSY" Bounds="983,1176" Alignment="Top" />
                 <Patch Id="RvIu1clZExZMaGGhA2NLc7" ManuallySortedPins="true">
                   <Patch Id="U2KLRQi8MlcLHQq4NNl87a" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="VknMpzwDY6aQM8b9d47Ydt" Name="Update" ManuallySortedPins="true">
@@ -295,7 +297,7 @@
                   </Patch>
                   <Patch Id="IykhLAiCAlFLcnikKzRvQH" Name="Dispose" ManuallySortedPins="true" />
                   <Node Bounds="954,1257,145,19" Id="GeuJA3nIPqLNqGzMZYEXNh">
-                    <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="Aether2.0.vl">
+                    <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="AddDistanceJoint" />
                     </p:NodeReference>
@@ -333,10 +335,8 @@
                     <Pin Id="VSb2BnWpI4dPt8JCAYNngf" Name="Result" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="NA4ZQ1OjSaJNcvJhUJenSY" Bounds="983,1176" Alignment="Top" />
               </Node>
             </Patch>
-            <ControlPoint Id="FklCgH58vkIOFrQwqIFZGg" Bounds="994,1156" Alignment="Top" />
           </Node>
           <Node Bounds="844,871,85,19" Id="MPdjQ4gqlOmN4vLIJCjeTn">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -430,9 +430,7 @@
         <Link Id="KnnMuKoP9dNPht04VS5dVz" Ids="AAep1zxzCODOiwDp6xzH4N,QXBiWou07CYQAmyOPHL7IW" />
         <Link Id="PWb6XgvZPpvOJTGz0JrjDI" Ids="QXBiWou07CYQAmyOPHL7IW,NWQKlA2pWbTOpCsD2AkZtv" />
         <Link Id="UXTRlUOD9iVNyCqlkFIauI" Ids="IwZoU3LmsEEQbEnyKYILg5,Qb2I4DIR0ULOMjMZG4bcHa" />
-        <Link Id="KYJBLHmpqZfPastdLKd6Qf" Ids="EEpS9i3NkXhLkvbWE7DgjM,J6OO2KCsIt6LACrAVT31BQ" />
         <Link Id="QE9bYTeqhIpO333z2UZVKR" Ids="N7CvieWSk8fL5X1QzbMqW8,JLPjPTgYtWiMDPApYahsf6" />
-        <Link Id="C7laL0Sy1CiPW1OPV108GP" Ids="NnzpkK2Gpl8Ov1XLVj9ie8,JyUhtEpgLV5PM9nvlxMTWQ" />
         <Link Id="JCQoWw7v3n8LN4ZXMsVGSt" Ids="I5y1wxGnJO4Oly8upTfl4I,I6LQAgoqj32N1tCkAB5T9C" />
         <Link Id="HHJseL2MyBcMnESeDr2Uiv" Ids="NGYmYQfuvIdLG9ZsaItdiY,AQf9p6GWMYaNavvTPAleje,QVOMbR9isd0PMzkJG1GJGG" />
         <Link Id="CkJOZpaE4kPPyaQQs3X6kY" Ids="QVOMbR9isd0PMzkJG1GJGG,RoKAiU3sBVkP0LXkNg1Ctl" />
@@ -440,10 +438,12 @@
         <Link Id="FVfiPsQSIe3NIEr2jrgaNO" Ids="QVOMbR9isd0PMzkJG1GJGG,QYfCSn3erzpMQEbwfTsQIL" />
         <Link Id="Qn2enPV3h27Lir057h5FXj" Ids="QVOMbR9isd0PMzkJG1GJGG,RGlIWGNTPtwLcmPEK4dhTs" />
         <Link Id="HVSNzFgjz9zOb1Xzxu47sU" Ids="Ig0SOUsKIC0NEzQMcWoMsK,Aqjd8MDnFE9PMonCwKDJ4T" />
+        <Link Id="GORa1EZDpm3QF7GcCc6sT8" Ids="NnzpkK2Gpl8Ov1XLVj9ie8,Cy0tUTVk9tjL0refDDbDgC" />
+        <Link Id="UhWsXt67uGtMVw60pObR57" Ids="EEpS9i3NkXhLkvbWE7DgjM,PQBg3D89fKiOhvZluy6kof" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="OzMjFERx8rfLuCLgMmdyR3" Location="Aether.Physics2D" Version="2.0.0" />
   <NugetDependency Id="Cvx92vO80iVPZaW3QwuA8i" Location="VL.Skia" Version="2023.5.3-0403-g984a15c5cf" />
-  <NugetDependency Id="EC1OWyfe1VXOXQ1vaDXBTB" Location="Aether2.0" Version="0.0.0" />
+  <NugetDependency Id="F3IrXFFpoUiM4B29NtK1Zv" Location="VL.AetherPhysics" Version="0.0.0" />
 </Document>
